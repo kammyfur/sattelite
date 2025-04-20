@@ -1,0 +1,9 @@
+{
+    "title": "PlasmaWalls",
+    "date": "02/2021",
+    "unreleased": false,
+    "description": {
+        "en": "Synced with Git, website that helps download KDE Plasma's wallpapers",
+        "fr": "Synchronisé avec Git, site Web qui permet de télécharger les fonds d'écran de KDE Plasma"
+    }
+}

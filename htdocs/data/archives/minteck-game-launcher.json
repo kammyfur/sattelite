@@ -1,0 +1,9 @@
+{
+    "title": "Game Launcher",
+    "date": "07/2020",
+    "unreleased": false,
+    "description": {
+        "en": "Simple game and app launcher for Linux",
+        "fr": "Lanceur de jeu et d'application simple pour Linux"
+    }
+}

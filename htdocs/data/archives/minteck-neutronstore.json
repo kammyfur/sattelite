@@ -1,0 +1,9 @@
+{
+    "title": "Neutron Store (CMS Store)",
+    "date": "10/2019",
+    "unreleased": false,
+    "description": {
+        "en": "Optional features store for legacy versions of Neutron",
+        "fr": "Boutique de fonctionnalités optionnelles pour les anciennes versions de Neutron"
+    }
+}

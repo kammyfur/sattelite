@@ -1,0 +1,9 @@
+{
+    "title": "Tyson Bots",
+    "date": "02/2020",
+    "unreleased": false,
+    "description": {
+        "en": "Discord and Web-based chatbot powered by Google Dialogflow",
+        "fr": "Robot de discussion sur le Web et pour Discord propulsé par Google Dialogflow"
+    }
+}

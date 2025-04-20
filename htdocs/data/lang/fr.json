@@ -1,0 +1,218 @@
+{
+    "global": {
+        "website": "Site Web de Minteck",
+        "copyright": "Tous droits réservés",
+        "source": "Code source",
+        "legal": "Légal",
+        "account": "Compte Minteck",
+        "back": "Retourner à l'accueil"
+    },
+    "main": {
+        "page": "Page d'accueil",
+        "intro": {
+            "title": "Coucou, je suis Minteck",
+            "tagline": [
+                "Je me demande ce que votre marque de beauté est",
+                "Je fais des trucs bizarres avec la tech",
+                "Nom d'une licorne !",
+                "On vous a jamais dit que les ami·e·s c'est magique ?",
+                "Rainbow Dash pour toujours !",
+                "Venez ici les poneys !",
+                "Faut que ça soit environ 20% plus chouette.",
+                "Tellement génial !",
+                "Mon nom est Scootaloo.",
+                "Et si mes ailes ne peuvent pas me faire voler ?"
+            ],
+            "subtitle": "Bienvenue dans mon refuge personnel !"
+        },
+        "elements": {
+            "projects": {
+                "title": "Projets",
+                "description": "Les genres de trucs bizarres que je fais sur mon temps libre",
+                "action": "Voir la liste"
+            },
+            "contact": {
+                "title": "Me contacter",
+                "description": "Alors, vous voulez discuter ? Avez moi ? Super ! Venez dire bonjour.",
+                "action": "Infos. de contact"
+            },
+            "about": {
+                "title": "À propos de moi",
+                "description": "Oh non, vous ne me connaissez pas ! Pas de panique, on va arranger ça !",
+                "action": "Voir les infos."
+            }
+        },
+        "history": {
+            "title": "Le même mois",
+            "items": [
+                {
+                    "title": "Project AI devient meilleur (2019)",
+                    "description": "Project AI (par la suite connu comme Kiki) était un robot de discussion dont le but était de remonter le moral de l'utilisateur"
+                },
+                {
+                    "title": "début du développement de Horizon (2019)",
+                    "description": "Horizon était un robot Discord multifonctions développé par moi et imaginé par Horizon.Data (désormais SSmellys)"
+                },
+                {
+                    "title": "Chat'Max est désormais ouvert à l'enregistrement (2018)",
+                    "description": "Chat'Max était un système de pages créé pour mes ami·e·s. Il a par la suite été remplacé par Projectpédia puis PinPages."
+                },
+                {
+                    "title": "Projectpédia est annoncé (2019)",
+                    "description": "Projectpédia était un système de wiki pour obtenir de l'aide sur tous types de projets. Il a par la suite été remplacé par PinPages."
+                },
+                {
+                    "title": "lancement du programme d'accès anticipé de Kartik le 4 mai 2021",
+                    "description": "Cette période d'1 mois a permis de polir l'interface et l'expérience, tester le mode en ligne et corriger les bugs."
+                },
+                {
+                    "title": "sortie officielle de Kartik le 12 juin 2021",
+                    "description": "Kartik était un jeu de course de voiture simple développé en 6 mois"
+                },
+                {
+                    "title": "Paws and Hooves est étendu pour devenir public (2021)",
+                    "description": "Paws and Hooves est un réseau communautaire pour les bronies, furries, les plural et les otherkin"
+                },
+                {
+                    "title": "PinPages version 20.08 (2020), une mise à jour massive, sort officiellement",
+                    "description": "PinPages était un projet de réseau social similaire à Twitter ou Facebook"
+                },
+                {
+                    "title": "la 4<sup>ème</sup> version de mon site Web est publiée en septembre 2019",
+                    "description": "Site Web Minteck Projects v4. Même moteur de rendu que v3, avec une IU différente"
+                },
+                {
+                    "title": "la première version de Neutron (2019) est créée en seulement 2 jours",
+                    "description": "Neutron (connu comme Minteck Projects CMS à ce moment). La version 1.0 a été développée en 2 jours."
+                },
+                {
+                    "title": "une variante plus solide avec un thème sombre de mon site est en ligne",
+                    "description": "Site Web Minteck Projects v5. Similaire à v4 mais avec une IU et des polices modifiées."
+                },
+                {
+                    "title": "mon premier site Web est développé (2018)",
+                    "description": "Site Web Minteck Projects v1. Vous êtes actuellement sur v9, ça fait un long parcours !"
+                }
+            ]
+        },
+        "contact": {
+            "title": "Me contacter"
+        },
+        "about": {
+            "title": "À propos de moi",
+            "languages": {
+                "title": "Langues",
+                "description": "Le français est ma langue maternelle, et je parle couramment anglais."
+            },
+            "experiments": {
+                "title": "Expériences",
+                "description": "Je fais parfois des expériences avec la technologie sur mon temps libre"
+            },
+            "archives": {
+                "title": "Archives",
+                "description": "Tous les trucs que j'ai fait son conservés sur mon site, qu'ils soient maintenus ou non.",
+                "action": "Voir les archives"
+            },
+            "general": {
+                "title": "Qui suis-je ?",
+                "description": "Je suis une pegasister française.",
+                "action": "En savoir plus"
+            },
+            "history": {
+                "title": "Ça fait un long parcours",
+                "description": "Ça fait maintenant %1 ans que je bidouille la technologie, ça fait longtemps !"
+            },
+            "privacy": {
+                "title": "La vie privée est un droit !",
+                "description": "Je m'efforce de respecter la vie privée des gens, et évite d'utiliser des services ou applications qui ne la respecte pas."
+            }
+        }
+    },
+    "legal": {
+        "page": "Portail légal",
+        "intro": {
+            "title": "Informations légales",
+                "description": "C'est sur cette page que les documents légaux sont postés. Le canari de mandat (en bas de la page) est signé numériquement avec une clé GPG, il est très important que vous vous assuriez de son authenticité, pour être sûr·e qu'il n'a pas été compromis.",
+            "pubkey": {
+                "text": "Cliquez ici pour afficher la clé GPG publique",
+                "other": "récupérez-la aussi depuis :",
+                "fingerprint": "Emprunte digitale :"
+            }
+        },
+        "notices": {
+            "title": "Mentions légales",
+            "content": {
+                "intro": "Ce site Web est développé, géré et hébergé par :",
+                "developer": "Développé et édité par Minteck",
+                "home1": "Légalement situé à",
+                "home2": "Formellement situé à",
+                "management": "Serveur géré, hébergé et installé par Minteck Hosting Services",
+                "isp": "Accès Internet géré par",
+                "homed": "et domicilié aux fins des présentes"
+            }
+        },
+        "tos": {
+            "title": "Conditions d'utilisation",
+            "content": [
+                "Les présentes conditions d'utilisation s'appliquent aux services suivants :",
+                "Compte Minteck",
+                "Commentaires d'UnchainedTech",
+                "Les services de Minteck sont constitués d'un service d'authentification en ligne distribué par Minteck qui peut étendre les capacités de ses projets (par exemple Kartik Online). Le service compte Minteck est soumis aux suivantes conditions :",
+                "Vous ne devez pas utiliser un compte Minteck ou une quelconque application connectée à une ou plusieurs des fins suivantes :",
+                "activité étant illégale en France",
+                "empêcher aux autres utilisateurs d'accéder à une partie ou à la totalité d'un ou plusieurs services",
+                "tenter de contourner des mécanismes de sécurité et s'élever ses privilèges",
+                "publier les informations personelles d'un autre utilisateur",
+                "atteindre un but commercial ou professionnel"
+            ]
+        },
+        "privacy": {
+            "title": "Politique de confidentialité",
+            "content": [
+                "Nous n'utilisons pas d'autres données que ce dont nous avons strictement besoin. Point.",
+                "Les données que nous recueillons sont uniquement celles auxquelles vous nous donnez explicitement accès (par exemple via un formulaire d'enregistrement), et sont conservées jusqu'à ce que vous décidez de la suppression des données. Dés lors de l'envoi d'une demande de suppression automatique, nous nous assurons que vos données sont retirées de tous nos serveurs.",
+                "Pour un soucis d'application des lois en vigueur, il se peut que nous collections des données supplémentaires (adresse IP, URL, date et heure, système d'exploitation, informations sur le navigateur) après l'identification d'une activité potentiellement malveillante. Ces données sont supprimées tous les ans vers janvier. Vous pouvez demander la suppression de ces données en avance si nous pensons qu'il n'y a pas eu d'activité malveillante en envoyant un email à %1legal@minteck.org%2."
+            ]
+        },
+        "warrant": {
+            "title": "Canari de mandat"
+        }
+    },
+    "archives": {
+        "title": "Archives",
+        "months": [ "janvier", "février", "mars", "avril", "mai", "juin", "juiller", "août", "septembre", "octobre", "novembre", "décembre" ],
+        "never": "Jamais sorti",
+        "released": "Sorti officiellement",
+        "download": "Télécharger"
+    },
+    "metranslator": {
+        "title": "Metroz Traduction",
+        "tip": "Cliquez sur une des langues pour inverser",
+        "base": "Anglais",
+        "placeholder": "Commencez à taper ici...",
+        "facts": "Pas de faits disponibles sur ce texte",
+        "insights": {
+            "title": "Aperçu du traducteur",
+            "name": "Nom de la base de données :",
+            "version": "Version de la base de données:",
+            "size": "Taille de la base de données:",
+            "time": "Durée de traitement :"
+        },
+        "waiting": "En attente de la fin d'entrée...",
+        "processing": "Traduction...",
+        "nothing": "Le mot '%1' n'a pas de traduction en %2",
+        "error": "<i>Une erreur s'est produite, veuillez réessayer ultérieurement<ul><li>Vous êtes un·e développeur·ice ? Plus de détails sont affichés dans la console</li><li>Vous êtes un·e utilisateur·ice normal·e ? Contactez les administrateur·ice·s pour qu'ils/elles puissent corriger le problème</li></ul></i>",
+        "entries": "entrées",
+        "update": "dernière mise à jour par"
+    },
+    "me": {
+        "title": "À propos de moi",
+        "description": "Développeuse de logiciels, administratrice système, pegasister",
+        "external": "Voir sur",
+        "items": [
+            "Pronoms",
+            "Surnoms",
+            "Appelez-moi ..."
+        ]
+    }
+}

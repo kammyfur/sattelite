@@ -1,0 +1,54 @@
+<% global.title = lang.archives.title; %>
+<%- include(`${private}/header.ejs`) %>
+
+<a href="/<%- slang %>">← <%- lang.global.back %></a>
+
+<hr class="rnbwsquare-separator rnbwsquare-outer">
+
+<h1><%- lang.archives.title %></h1>
+
+<div class="grid-3 projects">
+    <%
+    const monthNames = lang.archives.months;
+    archives = [];
+    for (let archive of fs.readdirSync(serverRoot + "/htdocs/data/archives")) {
+        data = {};
+        if (archive.endsWith(".json")) {
+            json = JSON.parse(fs.readFileSync(serverRoot + "/htdocs/data/archives/" + archive).toString())
+
+            data.id = archive.substr(0, archive.length - 5);
+            data.name = json.title;
+            data.description = json.description[slang] ?? json.description.en;
+            data.date = (json.date.substr(3) + json.date.substr(0, 2)) - 1 + 1;
+
+            if (json.unreleased) {
+                let date = new Date(json.date.substr(3) + "-" + json.date.substr(0, 2) + "-01");
+                data.info = "<span style='color:gold;'>" + lang.archives.never + "</span> · " + monthNames[date.getMonth()] + " " + date.getFullYear();
+            } else {
+                let date = new Date(json.date.substr(3) + "-" + json.date.substr(0, 2) + "-01");
+                data.info = lang.archives.released + " · " + monthNames[date.getMonth()] + " " + date.getFullYear();
+            }
+
+            archives.push(data);
+        }
+    }
+    archives = archives.sort((a, b) => a.date - b.date).reverse()
+    %>
+    <% for (let archive of archives) { %>
+        <div class="project">
+            <img class="project-icon"
+                 src="<%- fs.existsSync(serverRoot + "/htdocs/public/assets/archive/" + archive.id + ".png") ? "/assets/archive/" + archive.id + ".png" : "/assets/icons/project.svg" %>">
+            <h2 class="project-name"><%- archive.name %></h2>
+            <p class="project-description"><%- archive.description %></p>
+            <p class="project-buttons">
+                <a
+                        href="https://archive.cdn.minteck.org/<%- archive.id %>.zip"
+                        target="_blank"
+                        class="big-button big-button-bg3"><%- lang.archives.download %></a>
+            </p>
+            <p style="text-align: center;"><small><%- archive.info %></small></p>
+        </div>
+    <% } %>
+</div>
+
+<%- include(`${private}/footer.ejs`) %>

@@ -1,0 +1,159 @@
+<% global.title = lang.legal.page; %>
+<%- include(`${private}/header.ejs`) %>
+
+<a href="/<%- slang %>">← <%- lang.global.back %></a>
+
+<hr class="rnbwsquare-separator rnbwsquare-outer">
+
+<h1><%- lang.legal.intro.title %></h1>
+
+<details id="/pubkey">
+    <summary style="cursor: pointer;"><%- lang.legal.intro.pubkey.text %> (<%- lang.legal.intro.pubkey.other %> <a
+                href="https://gitlab.minteck.org/minteck/minteck/-/raw/trunk/GPG%20key">Git</a>, <a
+                href="https://bucket.minteck.org/gpg">CDN</a>)
+    </summary>
+    <b><%- lang.legal.intro.pubkey.fingerprint %></b> <code style="font-family: monospace;">AEA7 73DB 0620 C57C FFB0 7A91 EFBD C684 35A5
+        74B7</code><br>
+    <pre style="font-family:monospace;">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+=TtV3
+-----END PGP PUBLIC KEY BLOCK-----
+    </pre>
+</details>
+
+<hr>
+
+<h2 id="/notices"><%- lang.legal.notices.title %></h2>
+<p><%- lang.legal.notices.content.intro %></p>
+<ul>
+    <li><%- lang.legal.notices.content.developer %>
+        <ul>
+            <li><%- lang.legal.notices.content.home1 %><br>
+                Loiret<br>
+                Centre Val-de-Loire<br>
+                France</li>
+            <li><%- lang.legal.notices.content.home2 %><br>
+                3, Cloudominium<br>
+                Ponyville,<br>
+                Equestria
+            </li>
+        </ul>
+    </li>
+    <li><%- lang.legal.notices.content.management %>
+        <ul>
+            <li>Loiret<br>
+                Centre Val-de-Loire<br>
+                France
+            </li>
+        </ul>
+    </li>
+    <li><%- lang.legal.notices.content.isp %> Orange SAS (RCS Nanterre 380 129 866)
+        <ul>
+            <li>111, quai du Président Roosevelt<br>
+                92130 ISSY-LES-MOULINEAUX<br>
+                <%- lang.legal.notices.content.homed %><br>
+                1 avenue Nelson Mandela<br>
+                94745 ARCUEIL
+            </li>
+            <li>+33 1 44 44 22 22</li>
+        </ul>
+    </li>
+</ul>
+
+<hr>
+
+<h2 id="/terms"><%- lang.legal.tos.title %></h2>
+<p><%- lang.legal.tos.content[0] %></p>
+<ul>
+    <li><%- lang.legal.tos.content[1] %></li>
+    <li>Minteck Trunk</li>
+    <li>Kartik Online</li>
+    <li><%- lang.legal.tos.content[2] %></li>
+</ul>
+<p><%- lang.legal.tos.content[3] %></p>
+
+<p><%- lang.legal.tos.content[4] %></p>
+<ul>
+    <li><%- lang.legal.tos.content[5] %></li>
+    <li><%- lang.legal.tos.content[6] %></li>
+    <li><%- lang.legal.tos.content[7] %></li>
+    <li><%- lang.legal.tos.content[8] %></li>
+    <li><%- lang.legal.tos.content[9] %></li>
+</ul>
+
+<hr>
+
+<h2 id="/privacy"><%- lang.legal.privacy.title %></h2>
+<p><%- lang.legal.privacy.content[0] %></p>
+<p><%- lang.legal.privacy.content[1] %></p>
+<p><%- lang.legal.privacy.content[2].replace("%1", "<a href='mailto:legal@minteck.org'>").replace("%2", "</a>") %></p>
+<%- include(`${private}/footer.ejs`) %>

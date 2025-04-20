@@ -1,0 +1,9 @@
+{
+    "title": "Horizon",
+    "date": "02/2019",
+    "unreleased": false,
+    "description": {
+        "en": "General-purpose Discord bot",
+        "fr": "Le couteau suisse des robots Discord"
+    }
+}

@@ -1,0 +1,218 @@
+{
+    "global": {
+        "website": "Minteck's Website",
+        "copyright": "All rights reserved",
+        "source": "Source Code",
+        "legal": "Legal",
+        "account": "Minteck Account",
+        "back": "Go back home"
+    },
+    "main": {
+        "page": "Main page",
+        "intro": {
+            "title": "Hello, I'm Minteck",
+            "tagline": [
+                "I wonder what your cutie mark is",
+                "Doing weird techy stuff",
+                "Name of a unicorn!",
+                "Didn't somepony even tell you friendship is magic?",
+                "Rainbow Dash furever!",
+                "Come here everypony!",
+                "It needs to be about 20% cooler.",
+                "So awesome!",
+                "My name is Scootaloo.",
+                "So what if my wings can't get me off the ground?"
+            ],
+            "subtitle": "Welcome to my personal shelter!"
+        },
+        "elements": {
+            "projects": {
+                "title": "Projects",
+                "description": "The kind of weird stuff I do on my free time",
+                "action": "View list"
+            },
+            "contact": {
+                "title": "Contact Me",
+                "description": "So, you want to have a chat? With me? Nice! Come say hi.",
+                "action": "Contact Info"
+            },
+            "about": {
+                "title": "About Me",
+                "description": "Oh no, you don't know me! Don't worry, we can solve that!",
+                "action": "View Info"
+            }
+        },
+        "history": {
+            "title": "On the same month",
+            "items": [
+                {
+                    "title": "Project AI is getting better (2019)",
+                    "description": "Project AI (then known as Kiki) was a well being chat bot made to make the user feel better"
+                },
+                {
+                    "title": "Horizon's development starts (2019)",
+                    "description": "Horizon was a multipurpose Discord bot developed by me and imagined by Horizon.Data (now SSmellys)"
+                },
+                {
+                    "title": "Chat'Max is now open to registration (2018)",
+                    "description": "Chat'Max was a page system designed for my friends. It was then replaced by Projectpedia and PinPages."
+                },
+                {
+                    "title": "Projectpedia is announced (2019)",
+                    "description": "Projectpedia was a wiki system to get help on any kind of projects. It was then replaced by PinPages."
+                },
+                {
+                    "title": "Kartik's early access program is launched on May 4<sup>th</sup> 2021",
+                    "description": "This 1-month-long period helped polish the UI and experience, test the online mode and fix bugs."
+                },
+                {
+                    "title": "Kartik officially releases on June 12<sup>th</sup> 2021",
+                    "description": "Kartik was a simple racing game developed during 6 months"
+                },
+                {
+                    "title": "Paws and Hooves is extended to become public (2021)",
+                    "description": "Paws and Hooves is a brony, furry, plural-friendly and otherkin-friendly community network"
+                },
+                {
+                    "title": "PinPages version 20.08 (2020), a massive update, is officially released",
+                    "description": "PinPages was a social network project similar to Twitter or Facebook"
+                },
+                {
+                    "title": "the 4<sup>th</sup> version of my website is published in September 2019",
+                    "description": "Minteck Projects v4 website. Same rendering engine as v3, but different UI"
+                },
+                {
+                    "title": "the first Neutron version (2019) was made in only 2 days",
+                    "description": "Neutron (at the time known as Minteck Projects CMS). Version 1.0 made in 2 days."
+                },
+                {
+                    "title": "a dark themed and more solid variant of my website is now live",
+                    "description": "Minteck Projects v5 website. Same as v4 but with modified UI and fonts."
+                },
+                {
+                    "title": "my first website is developed (2018)",
+                    "description": "Minteck Projects v1 website. You are currently on v9, it has come a long way!"
+                }
+            ]
+        },
+        "contact": {
+            "title": "Contact Me"
+        },
+        "about": {
+            "title": "About Me",
+            "languages": {
+                "title": "Languages",
+                "description": "French is my mother language, and I am fluent in English."
+            },
+            "experiments": {
+                "title": "Experimenting",
+                "description": "I sometimes experiment with technological stuff on my free time"
+            },
+            "archives": {
+                "title": "Archives",
+                "description": "All the stuff I did is kept on my website, whether it's maintained or not.",
+                "action": "Visit archives"
+            },
+            "general": {
+                "title": "Who am I?",
+                "description": "I am a French pegasister.",
+                "action": "Read more"
+            },
+            "history": {
+                "title": "We've come a long way",
+                "description": "I've been doing techy stuff for the last %1 years now, that's loooong!"
+            },
+            "privacy": {
+                "title": "Privacy is a right!",
+                "description": "I strive to respect people's privacy, and try not to use services or applications that violate your privacy."
+            }
+        }
+    },
+    "legal": {
+        "page": "Legal portal",
+        "intro": {
+            "title": "Legal Portal",
+            "description": "This is the page where all legal documents are posted. The warrant canary (at the bottom) is signed using a GPG key, it's very important that you check for the validity of it, as it may have been compromised.",
+            "pubkey": {
+                "text": "Click here to view my GPG public key",
+                "other": "also get it from:",
+                "fingerprint": "Fingerprint:"
+            }
+        },
+        "notices": {
+            "title": "Legal Notices",
+            "content": {
+                "intro": "This website is developed, managed and hosted by:",
+                "developer": "Developed and edited by Minteck",
+                "home1": "Legally in",
+                "home2": "Formally in",
+                "management": "Server managed, hosted and installed by Minteck Hosting Services",
+                "isp": "Internet access managed by",
+                "homed": "and domiciled for the purposes hereof"
+            }
+        },
+        "tos": {
+            "title": "Terms and Conditions",
+            "content": [
+                "The following Terms and Conditions apply to the following services:",
+                "Minteck Account",
+                "UnchainedTech Comments",
+                "The Minteck services are made of an online authentication service delivered by Minteck that can extend the features of her projects (such as Kartik Online). The Minteck Account service is submitted to the following terms of use:",
+                "You must not use Minteck Account and any connected application for the following purposes:",
+                "activity that is illegal in France",
+                "prevent other users from accessing parts of the service or all the service",
+                "try to circumvent security systems and escalate privileges",
+                "publish private information of another user",
+                "achieve a commercial or professional goal"
+            ]
+        },
+        "privacy": {
+            "title": "Privacy Policy",
+            "content": [
+                "We don't use your data other than to strictly provide the service you want. Period.",
+                "The data we collect is only the data you explicitly give us access to (e.g. via a registration form), and is kept for as long as you choose to keep the data on our servers. Upon deletion by the user, we ensure this data is removed from all of our servers.",
+                "To enforce laws, we may collect additional data (IP address, URL, timestamps, operating system, browser version) upon identification of suspicious activity. This data is deleted every year near January. You can require early deletion of this data if we think there hasn't been any dangerous activity by sending an email to %1legal@minteck.org%2."
+            ]
+        },
+        "warrant": {
+            "title": "Warrant Canary"
+        }
+    },
+    "archives": {
+        "title": "Archives",
+        "months": [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ],
+        "never": "Never released",
+        "released": "Officially released",
+        "download": "Download"
+    },
+    "metranslator": {
+        "title": "Metroz Translate",
+        "tip": "Click one of the languages to invert",
+        "base": "English",
+        "placeholder": "Start typing here...",
+        "facts": "No facts available about this text",
+        "insights": {
+            "title": "Translator Insights",
+            "name": "Database Name:",
+            "version": "Database Version:",
+            "size": "Database Size:",
+            "time": "Processing Time:"
+        },
+        "waiting": "Waiting for end of input...",
+        "processing": "Translating...",
+        "nothing": "The word '%1' does not have a translation in %2",
+        "error": "<i>An error occurred, please try again later<ul><li>You are a developer? Additional details have been displayed in the console</li><li>You are a regular user? Contact the administrators so they fix the problem</li></ul></i>",
+        "entries": "entries",
+        "update": "last update by"
+    },
+    "me": {
+        "title": "About Me",
+        "description": "Software Developer, Sysadmin, Pegasister",
+        "external": "View on",
+        "items": [
+            "Pronouns",
+            "Nicknames",
+            "Call me ..."
+        ]
+    }
+}

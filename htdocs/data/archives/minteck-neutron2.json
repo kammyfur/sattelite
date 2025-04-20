@@ -1,0 +1,9 @@
+{
+    "title": "Neutron 2",
+    "date": "09/2019",
+    "unreleased": false,
+    "description": {
+        "en": "Second stable Neutron release",
+        "fr": "Deuxième version stable de Neutron"
+    }
+}

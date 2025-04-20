@@ -1,0 +1,9 @@
+{
+    "title": "Minteck Projects Web Server",
+    "date": "04/2019",
+    "unreleased": true,
+    "description": {
+        "en": "JavaScript-powered lightweight Web server. Served as a base for Sattelite Server.",
+        "fr": "Serveur Web léger propulsé par JavaScript"
+    }
+}

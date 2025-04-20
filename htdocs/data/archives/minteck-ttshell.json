@@ -1,0 +1,9 @@
+{
+    "title": "Titou Shell",
+    "date": "07/2018",
+    "unreleased": false,
+    "description": {
+        "en": "Alternative shell simulator for Windows Vista and newer",
+        "fr": "Simulateur de shell alternatif pour Windows Vista et suivant"
+    }
+}

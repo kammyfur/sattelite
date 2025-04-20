@@ -1,0 +1,9 @@
+{
+    "title": "Auto-uptime",
+    "date": "11/2019",
+    "unreleased": false,
+    "description": {
+        "en": "Website pinging service",
+        "fr": "Service de questionnement de site Web"
+    }
+}

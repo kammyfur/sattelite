@@ -1,0 +1,57 @@
+<% global.title = lang.me.title; %>
+<%- include(`${private}/header.ejs`) %>
+
+<a href="/<%- slang %>">← <%- lang.global.back %></a>
+
+<hr class="rnbwsquare-separator rnbwsquare-outer">
+<br>
+<%
+
+    me = JSON.parse(child_process.execSync("curl https://pronouns.page/api/profile/get/Minteck").toString());
+
+    if (me.profiles[slang]) {
+        profile = me.profiles[slang];
+        nlang = slang;
+    } else {
+        profile = me.profiles.en;
+        nlang = "en";
+    }
+
+%>
+
+<div style="display:grid;grid-template-columns: 96px 1fr;" class="container">
+    <img style="border-radius: 999px;" width="96px" src="<%- me.avatar %>">
+    <div style="margin-left: 20px;display: flex;align-items: center;">
+        <div>
+            <h1 style="margin: 0;">Mia "Scoots" Dash, aka Minteck %></h1>
+            <p style="margin: 0;opacity:.5;"><%- lang.me.description %> | France<br><a href="https://<%- nlang %>.pronouns.page/@Minteck" target="_blank"><%- lang.me.external %> pronouns.page</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="container" style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-column-gap: 20px;">
+    <div>
+        <h2 style="text-align: center;"><%- lang.me.items[0] %></h2>
+        <ul>
+        <% for (url of Object.keys(profile.pronouns)) { if (profile.pronouns[url] >= 0) { %>
+            <li><%- url.split("/")[url.split("/").length - 1].replace("&", "/") %></li>
+        <% }} %>
+        </ul>
+    </div>
+    <div>
+        <h2 style="text-align: center;"><%- lang.me.items[1] %></h2>
+        <ul>
+            <% for (name of Object.keys(profile.names)) { if (profile.names[name] >= 0) { %>
+                <li><%- name %></li>
+            <% }} %>
+        </ul>
+    </div>
+    <div>
+        <h2 style="text-align: center;"><%- lang.me.items[2] %></h2>
+        <% for (group of Object.keys(profile.words)) { for (word of Object.keys(profile.words[group])) { if (profile.words[group][word] >= 0) { %>
+            <li <% if (profile.words[group][word] === 1) { %>style="font-weight: bold;"<% } %> <% if (profile.words[group][word] === 3) { %>style="opacity: .25;"<% } %> <% if (profile.words[group][word] === 2) { %>style="font-style: italic;"<% } %>><%- word %></li>
+        <% }}} %>
+    </div>
+</div>
+
+<%- include(`${private}/footer.ejs`) %>

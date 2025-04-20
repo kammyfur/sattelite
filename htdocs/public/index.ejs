@@ -1,0 +1,244 @@
+<% global.title = lang.main.page; %>
+<%- include(`${private}/header.ejs`) %>
+
+<div id="intro" style="background-image: url('/assets/main.jpg');background-repeat: no-repeat;background-position: center;background-size: contain;height:100vh;display:flex;align-items: center;justify-content: center;margin: -20px;">
+    <div style="text-align: center;">
+        <div style="position: relative;top: -40px;">
+            <h1 class="rnbwsquare-title"><%- lang.main.intro.title %></h1>
+            <p class="tagline">—
+                <%
+                items = lang.main.intro.tagline
+
+                let item = items[Math.floor(Math.random() * items.length)]
+                %>
+                <%- item %>
+                —</p>
+            <h3><%- lang.main.intro.subtitle %></h3>
+        </div>
+    </div>
+
+<!--    <a class="scroller" href="#/main" style="display: block;position: absolute;bottom: 0;font-size: 32px;margin: 10px;">-->
+<!--        <p>↓</p></a>-->
+</div>
+
+<div class="grid-3 stand dont-break-me" id="/main">
+    <div style="text-align: center;">
+        <img src="/assets/icons/projects.svg" class="main-icon">
+        <h2 class="main-icon-sub"><%- lang.main.elements.projects.title %></h2>
+        <h3><%- lang.main.elements.projects.description %></h3>
+        <a href="https://gitlab.minteck.org/users/minteck/projects" target="_blank" class="big-button bb-main-mobile"><%- lang.main.elements.projects.action %> →</a>
+    </div>
+    <div style="text-align: center;">
+        <img src="/assets/icons/contact.svg" class="main-icon">
+        <h2 class="main-icon-sub"><%- lang.main.elements.contact.title %></h2>
+        <h3><%- lang.main.elements.contact.description %></h3>
+        <a href="#/contact" class="big-button bb-main-mobile"><%- lang.main.elements.contact.action %> ↓</a>
+    </div>
+    <div style="text-align: center;">
+        <img src="/assets/icons/about.svg" class="main-icon">
+        <h2 class="main-icon-sub"><%- lang.main.elements.about.title %></h2>
+        <h3><%- lang.main.elements.about.description %></h3>
+        <a href="#/about" class="big-button bb-main-mobile"><%- lang.main.elements.about.action %> ↓</a>
+    </div>
+
+    <div style="height: 41px;text-align: center;">
+        <a href="https://gitlab.minteck.org/users/minteck/projects" target="_blank" class="big-button bb-main-desktop"><%- lang.main.elements.projects.action %> →</a>
+    </div>
+    <div style="text-align: center;">
+        <a href="#/contact" class="big-button bb-main-desktop"><%- lang.main.elements.contact.action %> ↓</a>
+    </div>
+    <div style="text-align: center;">
+        <a href="#/about" class="big-button bb-main-desktop"><%- lang.main.elements.about.action %> ↓</a>
+    </div>
+</div>
+
+<br>
+<div style="text-align: center;">
+    <h2><%- lang.main.history.title %> ...</h2>
+    <%
+    items = {
+        "1": {
+            "title": "... " + lang.main.history.items[0].title,
+            "description": lang.main.history.items[0].description
+        },
+        "2": {
+            "title": "... " + lang.main.history.items[1].title,
+            "description": lang.main.history.items[1].description
+        },
+        "3": {
+            "title": "... " + lang.main.history.items[2].title,
+            "description": lang.main.history.items[2].description
+        },
+        "4": {
+            "title": "... " + lang.main.history.items[3].title,
+            "description": lang.main.history.items[3].description
+        },
+        "5": {
+            "title": "... " + lang.main.history.items[4].title,
+            "description": lang.main.history.items[4].description
+        },
+        "6": {
+            "title": "... " + lang.main.history.items[5].title,
+            "description": lang.main.history.items[5].description
+        },
+        "7": {
+            "title": "... " + lang.main.history.items[6].title,
+            "description": lang.main.history.items[6].description
+        },
+        "8": {
+            "title": "... " + lang.main.history.items[7].title,
+            "description": lang.main.history.items[7].description
+        },
+        "9": {
+            "title": "... " + lang.main.history.items[8].title,
+            "description": lang.main.history.items[8].description
+        },
+        "10": {
+            "title": "... " + lang.main.history.items[9].title,
+            "description": lang.main.history.items[9].description
+        },
+        "11": {
+            "title": "... " + lang.main.history.items[10].title,
+            "description": lang.main.history.items[10].description
+        },
+        "12": {
+            "title": "... " + lang.main.history.items[11].title,
+            "description": lang.main.history.items[11].description
+        }
+    }
+    %>
+    <h3><%- items['' + (new Date().getMonth() + 1)].title %></h3>
+    <p><i>(<%- items['' + (new Date().getMonth() + 1)].description %>)</i></p>
+</div>
+
+
+<br>
+
+<div id="/contact" style="text-align: center;" class="stand stand-strong">
+    <h1><%- lang.main.contact.title %></h1>
+    <div class="grid-3">
+        <a href="https://matrix.to/#/@minteck:jae.fi" target="_blank" class="button">
+            <div class="rnbwsquare-outer rnbwsquare-fixed rnbwsquare-stand">
+                <div class="rnbwsquare-inner" style="text-align: center;">
+                    <h2>Matrix</h2>
+                    <h3>@minteck:jae.fi</h3>
+                </div>
+            </div>
+        </a>
+        <a href="https://reddit.com/user/Minteck" target="_blank" class="button">
+            <div class="rnbwsquare-outer rnbwsquare-fixed rnbwsquare-stand">
+                <div class="rnbwsquare-inner" style="text-align: center;">
+                    <h2>Reddit</h2>
+                    <h3>u/Minteck</h3>
+                </div>
+            </div>
+        </a>
+        <a href="https://discord.com/invite/Hp8Vv8Vxx9" target="_blank" class="button">
+            <div class="rnbwsquare-outer rnbwsquare-fixed rnbwsquare-stand">
+                <div class="rnbwsquare-inner" style="text-align: center;">
+                    <h2>Discord</h2>
+                    <h3>@MinteckPony#2245</h3>
+                </div>
+            </div>
+        </a>
+        <a href="https://twitter.com/MinteckPony" target="_blank" class="button">
+            <div class="rnbwsquare-outer rnbwsquare-fixed rnbwsquare-stand">
+                <div class="rnbwsquare-inner" style="text-align: center;">
+                    <h2>Twitter</h2>
+                    <h3>@MinteckPony</h3>
+                </div>
+            </div>
+        </a>
+        <a href="https://t.me/ItsMinteck" target="_blank" class="button">
+            <div class="rnbwsquare-outer rnbwsquare-fixed rnbwsquare-stand">
+                <div class="rnbwsquare-inner" style="text-align: center;">
+                    <h2>Telegram</h2>
+                    <h3>@ItsMinteck</h3>
+                </div>
+            </div>
+        </a>
+        <a href="https://www.youtube.com/channel/UCfjxe9cs-ovoP1rBVwdMq0Q" target="_blank" class="button">
+            <div class="rnbwsquare-outer rnbwsquare-fixed rnbwsquare-stand">
+                <div class="rnbwsquare-inner" style="text-align: center;">
+                    <h2>YouTube</h2>
+                    <h3>Minteck</h3>
+                </div>
+            </div>
+        </a>
+        <a href="mailto:contact@minteck.com" target="_blank" class="button">
+            <div class="rnbwsquare-outer rnbwsquare-fixed rnbwsquare-stand">
+                <div class="rnbwsquare-inner" style="text-align: center;">
+                    <h2>Email</h2>
+                    <h3>contact@minteck.org</h3>
+                </div>
+            </div>
+        </a>
+        <a href="https://equestria.social/@minteck" target="_blank" class="button">
+            <div class="rnbwsquare-outer rnbwsquare-fixed rnbwsquare-stand">
+                <div class="rnbwsquare-inner" style="text-align: center;">
+                    <h2>Mastodon</h2>
+                    <h3>@moonshine@equestria.social</h3>
+                </div>
+            </div>
+        </a>
+        <a href="https://soundcloud.com/minteck" target="_blank" class="button">
+            <div class="rnbwsquare-outer rnbwsquare-fixed rnbwsquare-stand">
+                <div class="rnbwsquare-inner" style="text-align: center;">
+                    <h2>SoundCloud</h2>
+                    <h3>minteck</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<br>
+
+<div id="/about" style="text-align: center;">
+    <h1><%- lang.main.about.title %></h1>
+    <div class="grid-3">
+        <div style="text-align: center;">
+            <h2><%- lang.main.about.languages.title %></h2>
+            <h3><%- lang.main.about.languages.description %></h3>
+        </div>
+        <div style="text-align: center;">
+            <h2><%- lang.main.about.experiments.title %></h2>
+            <h3><%- lang.main.about.experiments.description %></h3>
+        </div>
+        <div style="text-align: center;">
+            <h2><%- lang.main.about.archives.title %></h2>
+            <h3><%- lang.main.about.archives.description %></h3>
+            <a href="/<%- slang %>/archive" class="big-button big-button-bg2"><%- lang.main.about.archives.action %> →</a>
+        </div>
+        <div style="text-align: center;">
+            <h2><%- lang.main.about.general.title %></h2>
+            <h3><%- lang.main.about.general.description %></h3>
+            <a href="/<%- slang %>/me" class="big-button big-button-bg2"><%- lang.main.about.general.action %> →</a>
+        </div>
+        <div style="text-align: center;">
+            <h2><%- lang.main.about.history.title %></h2>
+            <h3><%- lang.main.about.history.description.replace("%1", new Date().getFullYear() - 2013) %></h3>
+        </div>
+        <div style="text-align: center;">
+            <h2><%- lang.main.about.privacy.title %></h2>
+            <h3><%- lang.main.about.privacy.description %></h3>
+        </div>
+    </div>
+</div>
+
+<hr class="rnbwsquare-separator rnbwsquare-outer">
+
+<footer style="text-align:center;">
+    © <%- new Date().getFullYear() %> Minteck, <%- lang.global.copyright %><br>
+    <a href="https://gitlab.minteck.org/minteck/rainbow/-/commit/<%- fs.readFileSync(serverRoot + "/.git/" + fs.readFileSync(serverRoot + "/.git/HEAD").toString().trim().substr(5)).toString().trim() %>"
+       target="_blank">v<%- fs.readFileSync(serverRoot + "/htdocs/private/version.txt").toString().trim()
+        %>-<%-
+        fs.readFileSync(serverRoot + "/.git/" + fs.readFileSync(serverRoot + "/.git/HEAD").toString().trim().substr(5)).toString().trim().substr(0, 8) %></a>
+    · <a target="_blank" href="https://gitlab.minteck.org/minteck/sattelite"><%- lang.global.source %></a> ·
+    <a
+            href="/<%- slang %>/legal"><%- lang.global.legal %></a> · <a
+            href="https://kartik.minteck.org">Kartik</a> · <a
+            href="https://blog.minteck.org">Blog</a> · <a href="https://gitlab.minteck.org">GitLab</a>
+</footer>
+
+<%- include(`${private}/footer.ejs`) %>

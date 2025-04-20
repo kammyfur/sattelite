@@ -1,0 +1,126 @@
+/*
+ * MIT License
+ *
+ * Copyright (c) 2022- Minteck
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ */
+
+:root {
+    --rainbow-1: rgba(0, 116, 10, 1);
+    --rainbow-2: rgba(97, 116, 0, 1);
+    --rainbow-3: rgba(116, 69, 0, 1);
+    --rainbow-4: rgba(116, 0, 13, 1);
+    --rainbow-5: rgba(104, 0, 116, 1);
+    --rainbow-6: rgba(46, 0, 116, 1);
+    --rainbow-1l: rgb(184, 230, 187);
+    --rainbow-2l: rgb(222, 230, 184);
+    --rainbow-3l: rgb(230, 212, 184);
+    --rainbow-4l: rgb(230, 184, 189);
+    --rainbow-5l: rgb(225, 184, 230);
+    --rainbow-6l: rgb(201, 184, 230);
+    --rainbow-1ld: rgb(77, 128, 80);
+    --rainbow-2ld: rgb(119, 128, 77);
+    --rainbow-3ld: rgb(128, 108, 77);
+    --rainbow-4ld: rgb(128, 77, 82);
+    --rainbow-5ld: rgb(122, 77, 128);
+    --rainbow-6ld: rgb(95, 77, 128);
+}
+
+.rnbwsquare-outer {
+    border-radius: 5px;
+    background: linear-gradient(135deg, var(--rainbow-1) 0%, var(--rainbow-2) 20%, var(--rainbow-3) 40%, var(--rainbow-4) 60%, var(--rainbow-5) 80%, var(--rainbow-6) 100%);
+    /*animation-name: rainbow;*/
+    /*animation-timing-function: linear;*/
+    /*animation-duration: 240s;*/
+    /*animation-direction: normal;*/
+    /*animation-play-state: running;*/
+    /*animation-fill-mode: forwards;*/
+    /*animation-iteration-count: infinite;*/
+    padding: 2px;
+}
+
+.rnbwsquare-fixed {
+    background: linear-gradient(135deg, var(--rainbow-1l) 0%, var(--rainbow-2l) 20%, var(--rainbow-3l) 40%, var(--rainbow-4l) 60%, var(--rainbow-5l) 80%, var(--rainbow-6l) 100%);
+    animation: none !important;
+}
+
+.rnbwsquare-fixed-top {
+    background: linear-gradient(135deg, var(--rainbow-1ld) 0%, var(--rainbow-2ld) 20%, var(--rainbow-3ld) 40%, var(--rainbow-4ld) 60%, var(--rainbow-5ld) 80%, var(--rainbow-6ld) 100%);
+    animation: none !important;
+}
+
+.rnbwsquare-fixed .rnbwsquare-inner {
+    animation: none !important;
+}
+
+.rnbwsquare-stand .rnbwsquare-inner {
+    background: #333;
+}
+
+.rnbwsquare-inner {
+    border-radius: 5px;
+    background: #222;
+    padding: 15px;
+}
+
+@keyframes rainbow {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes rainbow-back {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(-360deg);
+    }
+}
+
+@keyframes rainbow-compensate {
+    0% {
+        filter: hue-rotate(360deg);
+    }
+    100% {
+        filter: hue-rotate(0deg);
+    }
+}
+
+/*noinspection CssInvalidPropertyValue*/
+.rnbwsquare-title {
+    background: linear-gradient(90deg, rgba(80, 191, 90, 1) 0%, rgba(191, 210, 92, 1) 20%, rgba(200, 152, 82, 1) 40%, rgba(199, 85, 97, 1) 60%, rgba(183, 80, 195, 1) 80%, rgba(118, 68, 194, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-back 3s ease-in-out infinite;
+    margin-bottom: 5px;
+}
+
+.rnbwsquare-separator {
+    border: none;
+    height: 3px;
+    padding: 0 !important;
+    margin: 20px -20px;
+}

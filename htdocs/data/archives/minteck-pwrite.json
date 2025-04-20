@@ -1,0 +1,9 @@
+{
+    "title": "pWrite Text Editor",
+    "date": "11/2019",
+    "unreleased": false,
+    "description": {
+        "en": "Open-source word processor powered by Web technologies",
+        "fr": "Traitement de texte libre de droits propulsé par des technologies Web"
+    }
+}

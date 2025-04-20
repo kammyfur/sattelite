@@ -1,0 +1,9 @@
+{
+    "title": "BetterSearch",
+    "date": "12/2019",
+    "unreleased": false,
+    "description": {
+        "en": "Meta-search engine with AI-powered analysis",
+        "fr": "Méta-moteur de recherche avec une analyse par IA"
+    }
+}

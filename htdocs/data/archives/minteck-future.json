@@ -1,0 +1,9 @@
+{
+    "title": "Future Desktop",
+    "date": "04/2020",
+    "unreleased": true,
+    "description": {
+        "en": "A desktop environment for Linux systems using Web technologies",
+        "fr": "Un environnement de bureau pour les systèmes Linux qui utilise les technologies Web"
+    }
+}

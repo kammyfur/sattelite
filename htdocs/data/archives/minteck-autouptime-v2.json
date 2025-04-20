@@ -1,0 +1,9 @@
+{
+    "title": "Auto-uptime Second Edition",
+    "date": "03/2020",
+    "unreleased": false,
+    "description": {
+        "en": "Website pinging service, new generation",
+        "fr": "Service de questionnement de site Web, nouvelle génération"
+    }
+}
